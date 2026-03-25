@@ -31,7 +31,7 @@ web_data = analyze_file("web.txt")
 dns_data = analyze_file("dns.txt")
 
 # ----------------------------
-# 🔍 NMAP ANALYSIS
+#  NMAP ANALYSIS
 # ----------------------------
 if "22/tcp" in nmap_data:
     risk_score += 1
@@ -49,7 +49,7 @@ if "open" in nmap_data:
     risk_score += 2
 
 # ----------------------------
-# 🌐 WEB ANALYSIS
+#  WEB ANALYSIS
 # ----------------------------
 if "apache" in web_data:
     risk_score += 1
@@ -63,7 +63,7 @@ if "ubuntu" in web_data:
     findings.append("Linux (Ubuntu) server identified")
 
 # ----------------------------
-# 🛡️ NIKTO ANALYSIS
+#  NIKTO ANALYSIS
 # ----------------------------
 if "outdated" in nikto_data:
     risk_score += 2
@@ -82,21 +82,21 @@ if "options:" in nikto_data:
     findings.append("Multiple HTTP methods enabled")
 
 # ----------------------------
-# 🌍 DNS / IPv6 ANALYSIS
+#  DNS / IPv6 ANALYSIS
 # ----------------------------
 if ":" in dns_data:
     risk_score += 1
     findings.append("IPv6 detected (additional attack surface)")
 
 # ----------------------------
-# 🧠 CONTEXT AWARENESS
+#  CONTEXT AWARENESS
 # ----------------------------
 if "scanme.nmap.org" in target:
     findings.append("Target is a known controlled test environment (Nmap)")
     confidence = "High (environment identified)"
 
 # ----------------------------
-# 📊 RISK CLASSIFICATION
+#  RISK CLASSIFICATION
 # ----------------------------
 if risk_score >= 12:
     risk_level = "🔴 High Risk"
@@ -106,7 +106,7 @@ else:
     risk_level = "🟢 Low Risk"
 
 # ----------------------------
-# 🧾 OUTPUT DISPLAY
+#  OUTPUT DISPLAY
 # ----------------------------
 print("[AI] Findings:")
 for f in findings:
@@ -117,7 +117,7 @@ print(f"[AI] Risk Level: {risk_level}")
 print(f"[AI] Confidence Level: {confidence}")
 
 # ----------------------------
-# 💾 SAVE REPORT
+#  SAVE REPORT
 # ----------------------------
 report = f"""
 AI RECONNAISSANCE REPORT
