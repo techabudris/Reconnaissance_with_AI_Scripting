@@ -1,0 +1,13 @@
+# Nmap 7.98 scan initiated Tue Mar 24 09:41:29 2026 as: /usr/lib/nmap/nmap --privileged -sV -T4 -oN nmap.txt www.hackthebox.com
+Nmap scan report for www.hackthebox.com (109.176.239.70)
+Host is up (0.040s latency).
+Other addresses for www.hackthebox.com (not scanned): 109.176.239.69
+Not shown: 996 filtered tcp ports (no-response)
+PORT     STATE SERVICE     VERSION
+80/tcp   open  http        Cloudflare http proxy
+443/tcp  open  ssl/http    Cloudflare http proxy
+587/tcp  open  submission?
+8080/tcp open  http        Cloudflare http proxy
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Mar 24 09:45:15 2026 -- 1 IP address (1 host up) scanned in 226.86 seconds
