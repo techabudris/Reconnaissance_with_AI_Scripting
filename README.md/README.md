@@ -16,7 +16,7 @@ By integrating AI into Bash scripting, reconnaissance can become automated, inte
 - **README.md** this file
 ### Code Files
 - **01_recon.sh** – Automated reconnaissance and data collection script for cybersecurity target analysis.
-- **02_ai_analysis.py8** – AI-driven analysis script that processes reconnaissance data, applies rule-based intelligence to evaluate findings, and generates a risk score for the target system.
+- **02_ai_analysis.py** – AI-driven analysis script that processes reconnaissance data, applies rule-based intelligence to evaluate findings, and generates a risk score for the target system.
 ### Data Files
 -**ai_report.txt** – Generated output file containing the AI-based analysis results, including identified findings, calculated risk score, and final risk classification for the target system.
 ### Configuration Files
