@@ -87,7 +87,7 @@ These files collectively support comprehensive forensic analysis and vulnerabili
 python3 ai_analysis.py www.hackthebox.com
 ```
 The ai_analysis.py script processes and analyzes the data generated during reconnaissance, applies AI techniques to identify potential threats and presents the findings in a structured report saved as:
--	**report.txt**.
+-	**ai_report.txt**.
 
 ## References
 -	Behl, A., Behl, K., & Rao, H. R. (2019). Artificial intelligence in cybersecurity. Digital Investigation Journal.
