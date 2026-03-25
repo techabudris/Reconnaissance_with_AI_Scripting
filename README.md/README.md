@@ -11,11 +11,12 @@ Reconnaissance is a crucial first step in penetration testing and ethical hackin
 By integrating AI into Bash scripting, reconnaissance can become automated, intelligent and adaptive. AI modules can analyze results from multiple tools, detect patterns, prioritize targets and generate actionable reports. This article demonstrates a workflow for AI-enhanced Bash reconnaissance, using www.hackthebox.com as a practical target.
 
 ## What's Included
-** Reconnaissance_Lab_Manual.md **-Complete 10-page lab manual with theory and practical guidance
+- **Reconnaissance_Lab_Manual.md**
+- **Complete 5-page lab manual with theory and practical guidance**
 - **README.md** this file
 ### Code Files
-- **01_recon.sh – Automated reconnaissance and data collection script for cybersecurity target analysis.
-- **02_ai_analysis.py – AI-driven analysis script that processes reconnaissance data, applies rule-based intelligence to evaluate findings, and generates a risk score for the target system.
+- **01_recon.sh** – Automated reconnaissance and data collection script for cybersecurity target analysis.
+- **02_ai_analysis.py8** – AI-driven analysis script that processes reconnaissance data, applies rule-based intelligence to evaluate findings, and generates a risk score for the target system.
 ### Data Files
 -**ai_report.txt** – Generated output file containing the AI-based analysis results, including identified findings, calculated risk score, and final risk classification for the target system.
 ### Configuration Files
@@ -58,7 +59,7 @@ Reconnaissance_with_AI_Scripting
 ## Quick Start
 
 ### 1. Environment Setup
-** Automated Setup on Kali Linux (RECOMMENDED)**
+**Automated Setup on Kali Linux (RECOMMENDED)**
 ```bash
 chmod +x ‘configuration files’/setup.sh
 ./’configuration files’/setup.sh
@@ -86,7 +87,7 @@ These files collectively support comprehensive forensic analysis and vulnerabili
 python3 ai_analysis.py www.hackthebox.com
 ```
 The ai_analysis.py script processes and analyzes the data generated during reconnaissance, applies AI techniques to identify potential threats and presents the findings in a structured report saved as:
--	report.txt.
+-	**report.txt**.
 
 ## References
 -	Behl, A., Behl, K., & Rao, H. R. (2019). Artificial intelligence in cybersecurity. Digital Investigation Journal.
